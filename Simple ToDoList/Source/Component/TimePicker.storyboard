@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Time Picker Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="TimePickerController" customModule="Simple_ToDoList" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMC-Ek-AkP">
+                                <rect key="frame" x="0.0" y="571" width="412" height="325"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KKH-zz-6fh">
+                                        <rect key="frame" x="8" y="8" width="97" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="jIC-1p-RVM"/>
+                                            <constraint firstAttribute="height" constant="49" id="oUy-RS-aM9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Cancelar">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bTo-Bt-RhK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3h-Qf-7ga">
+                                        <rect key="frame" x="341" y="8" width="65" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="jwN-5e-4DC"/>
+                                            <constraint firstAttribute="width" constant="65" id="nRc-bQ-DC5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="black" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="OK">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="close:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="geq-ao-VTV"/>
+                                        </connections>
+                                    </button>
+                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="LDu-pi-Wh5">
+                                        <rect key="frame" x="46" y="74" width="320" height="216"/>
+                                        <locale key="locale" localeIdentifier="pt_BR"/>
+                                    </datePicker>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="G3h-Qf-7ga" firstAttribute="top" secondItem="sMC-Ek-AkP" secondAttribute="top" constant="8" id="11M-D2-Nqc"/>
+                                    <constraint firstItem="LDu-pi-Wh5" firstAttribute="leading" secondItem="sMC-Ek-AkP" secondAttribute="leading" constant="46" id="Cny-5h-WvV"/>
+                                    <constraint firstItem="G3h-Qf-7ga" firstAttribute="baseline" secondItem="KKH-zz-6fh" secondAttribute="firstBaseline" id="PsD-3J-MfN"/>
+                                    <constraint firstItem="KKH-zz-6fh" firstAttribute="top" secondItem="sMC-Ek-AkP" secondAttribute="top" constant="8" id="XnI-TX-KKs"/>
+                                    <constraint firstAttribute="bottom" secondItem="LDu-pi-Wh5" secondAttribute="bottom" constant="35" id="eTU-9c-aYS"/>
+                                    <constraint firstItem="KKH-zz-6fh" firstAttribute="leading" secondItem="sMC-Ek-AkP" secondAttribute="leading" constant="8" id="goS-AD-aKW"/>
+                                    <constraint firstAttribute="trailing" secondItem="LDu-pi-Wh5" secondAttribute="trailing" constant="46" id="jJE-HK-WYx"/>
+                                    <constraint firstAttribute="trailing" secondItem="G3h-Qf-7ga" secondAttribute="trailing" constant="6" id="np8-VX-ulT"/>
+                                    <constraint firstItem="LDu-pi-Wh5" firstAttribute="top" secondItem="KKH-zz-6fh" secondAttribute="bottom" constant="17" id="yHc-uR-7xN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.33000000000000002" alpha="0.75" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sMC-Ek-AkP" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="34" id="APq-JU-Ikr"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sMC-Ek-AkP" secondAttribute="trailing" constant="2" id="Dco-b5-fKt"/>
+                            <constraint firstItem="sMC-Ek-AkP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Lbp-9C-9Zc"/>
+                            <constraint firstItem="sMC-Ek-AkP" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="MtM-NG-eo2"/>
+                            <constraint firstItem="sMC-Ek-AkP" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="527" id="Wur-pg-op1"/>
+                            <constraint firstAttribute="bottom" secondItem="sMC-Ek-AkP" secondAttribute="bottom" id="mj8-rb-K0O"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnCancel" destination="KKH-zz-6fh" id="C6O-5h-Nhq"/>
+                        <outlet property="btnOk" destination="G3h-Qf-7ga" id="6Fx-pM-2z2"/>
+                        <outlet property="datePicker" destination="LDu-pi-Wh5" id="d1R-C2-b5Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197.10144927536234" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
