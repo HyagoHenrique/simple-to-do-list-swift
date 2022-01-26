@@ -29,6 +29,8 @@
 		9AE31DD627A08CC1006B7FE9 /* TimePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE31DD527A08CC1006B7FE9 /* TimePicker.storyboard */; };
 		9AE31DD827A08CF5006B7FE9 /* TimePickerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE31DD727A08CF5006B7FE9 /* TimePickerController.swift */; };
 		9AE31DDB27A0A364006B7FE9 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE31DDA27A0A364006B7FE9 /* Date.swift */; };
+		9AE31DDD27A0A675006B7FE9 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE31DDC27A0A675006B7FE9 /* Task.swift */; };
+		9AE31DE027A0A6EF006B7FE9 /* TaskDefaultHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE31DDF27A0A6EF006B7FE9 /* TaskDefaultHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		9AE31DD527A08CC1006B7FE9 /* TimePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TimePicker.storyboard; sourceTree = "<group>"; };
 		9AE31DD727A08CF5006B7FE9 /* TimePickerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerController.swift; sourceTree = "<group>"; };
 		9AE31DDA27A0A364006B7FE9 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		9AE31DDC27A0A675006B7FE9 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		9AE31DDF27A0A6EF006B7FE9 /* TaskDefaultHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDefaultHelper.swift; sourceTree = "<group>"; };
 		AD2BD99C5E762266BBEFCE5C /* Pods-Simple ToDoListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Simple ToDoListTests.debug.xcconfig"; path = "Target Support Files/Pods-Simple ToDoListTests/Pods-Simple ToDoListTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B971B4A8EC3989684449F17D /* Pods_Simple_ToDoListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_ToDoListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE9FCFA2DE04514E84171A68 /* Pods_Simple_ToDoList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Simple_ToDoList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,6 +172,7 @@
 		9AE31DBD27A037F7006B7FE9 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				9AE31DDE27A0A6D2006B7FE9 /* Suport */,
 				9AE31DD927A0A350006B7FE9 /* Extensions */,
 				9AE31DD427A08CAE006B7FE9 /* Component */,
 				9AE31DBE27A037F7006B7FE9 /* Controller */,
@@ -190,6 +195,7 @@
 		9AE31DBF27A037F7006B7FE9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9AE31DDC27A0A675006B7FE9 /* Task.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,6 +234,14 @@
 				9AE31DDA27A0A364006B7FE9 /* Date.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9AE31DDE27A0A6D2006B7FE9 /* Suport */ = {
+			isa = PBXGroup;
+			children = (
+				9AE31DDF27A0A6EF006B7FE9 /* TaskDefaultHelper.swift */,
+			);
+			path = Suport;
 			sourceTree = "<group>";
 		};
 		A2129AD85B926DE1985326CB /* Frameworks */ = {
@@ -497,8 +511,10 @@
 			files = (
 				9AE31D9127A03740006B7FE9 /* ViewController.swift in Sources */,
 				9AE31DDB27A0A364006B7FE9 /* Date.swift in Sources */,
+				9AE31DE027A0A6EF006B7FE9 /* TaskDefaultHelper.swift in Sources */,
 				9AE31DD827A08CF5006B7FE9 /* TimePickerController.swift in Sources */,
 				9AE31DD327A07918006B7FE9 /* TaskTableCell.swift in Sources */,
+				9AE31DDD27A0A675006B7FE9 /* Task.swift in Sources */,
 				9AE31DC627A06C08006B7FE9 /* ListTaskController.swift in Sources */,
 				9AE31DD027A073FF006B7FE9 /* EmptyTableCell.swift in Sources */,
 				9AE31DC427A06BC2006B7FE9 /* LoginController.swift in Sources */,
